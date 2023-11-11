@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf=8"?>
+
+<IGRYHL_modell>
+    <A a="">
+        <c>
+            <d></d>
+            <e></e>
+        </c>
+    </A>
+    <b>
+        <x></x>
+        <y></y>
+    </b>
+    <B a="">
+        <b>
+            <x></x>
+            <y></y>
+        </b>
+    </B>
+    <C a="">
+        <b></b>
+    </C>
+</IGRYHL_modell>

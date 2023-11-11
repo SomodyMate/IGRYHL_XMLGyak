@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elemnetFormDefault="qualified">
+
+<xs:element name="hnev" type="xs:string"/>
+<xs:element name="szulnev" type="xs:string"/>
+<xs:element name="szak" type="xs:string"/>
+<xs:attribute name="tanev" type="xs:Tanev"/> //saját tipus
+<xs:attribute  name="egyetem" type="xs:string"/>
+
+<xs:element name="kurzusnev" type="xs:string"/>
+<xs:element name="kredit" type="xs:Kredit"/> //saját tipus
+<xs:element name="hely" type="xs:string"/>
+<xs:element name="idopont" type="xs:string"/>
+<xs:element name="oktato" type="xs:string"/>
+<xs:attribute name="id" type="xs:ID"/> //saját tipus
+<xs:attribute name="jovahagyas" type="Logikai"/> //saját tipus
+
+<simpleType>
+    <restiction base="Logikai" />
+        <pattern value=""/>
+</simpleType>

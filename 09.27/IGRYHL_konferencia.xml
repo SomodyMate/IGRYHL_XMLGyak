@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf=8"?>
+
+<konferencia>
+    <cím>Adatkezelés XML-ben</cím>
+    <hallgatók>
+        <hallgató>
+            <név>Somody Máté</név>
+            <lakcím>Miskolc</lakcím>
+        </hallgató>
+    </hallgatók>
+    <helyszín>Miskolci Egyetem</helyszín>
+    <előadó>
+        <név>Kovács Péter</név>
+        <adószám>0123456</adószám>
+        <lakcím>Miskolc</lakcím>
+    </előadó>
+    <dátum>2023.09.27.</dátum>
+</konferencia>

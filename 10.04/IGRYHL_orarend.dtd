@@ -1,0 +1,14 @@
+<!ELEMENT IGRYHL_orarend (ora)>
+    !ELEMENT ora (szak, kurzus_név, oktató, időpont, helyszín)>
+        <!ELEMENT targy ANY>
+        <!ELEMENT idopont (kezdet, vég, nap)>
+            <!ELEMENT nap ANY>
+            <!ELEMENT tol ANY>
+            <!ELEMENT ig ANY>
+        <!ELEMENT helyszin ANY>
+        <!ELEMENT oktato ANY>
+        <!ELEMENT szak ANY>
+
+
+<!ATTLIST ora id ID #REQUIRED>
+<!ATTLIST ora tipus (elmelet|gyakorlat) "elmélet">

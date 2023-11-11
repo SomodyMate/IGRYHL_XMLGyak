@@ -1,0 +1,15 @@
+<!ELEMENT IGRYHL_modell(A,B,b,C)>
+<!ATTLIST A a ID #REQUIRED>
+<!ELEMENT A (c) >
+    <!ELEMENT c (d,e)>
+    <!ATTLIST c d EMPTY>
+    <!ATTLIST c e EMPTY>
+<!ELEMENT A (b) >
+    <!ELEMENT b (x,y)>
+    <!ATTLIST b x EMPTY>
+    <!ATTLIST b y EMPTY>
+<!ATTLIST B a ID #REQUIRED>
+<!ELEMENT B (b) >
+<!ATTLIST C a ID #REQUIRED>
+<!ELEMENT C (b) >
+<!ELEMENT C b EMPTY>

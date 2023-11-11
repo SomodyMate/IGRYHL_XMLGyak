@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--DOCTYPE IGRYHL_orarend SYSTEM "IGRYHL_orarend.dtd"-->
+
+<IGRYHL_orarend xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="IGRYHL_orarend.xsd">
+    <ora id="1" tipus="elmelet">
+        <targy> Adatkezelés XML-ben </targy>
+        <idopont>
+            <nap> Kedd </nap>
+            <tol> 12:00 </tol>
+            <ig>  14:00 </ig>
+        </idopont>
+        <helyszin> A1 XXXII. </helyszin>
+        <oktato> Dr. Bednarik László </oktato>
+        <szak> Programtervező Informatikus </szak>
+    </ora>
+    <ora id="2" tipus="gyakorlat">
+        <targy> Adatkezelés XML-ben </targy>
+        <idopont>
+            <nap> Szerda </nap>
+            <tol> 12:00 </tol>
+            <ig>  14:00 </ig>
+        </idopont>
+        <helyszin> In 101 </helyszin>
+        <oktato> Dr. Bednarik László </oktato>
+        <szak> Programtervező Informatikus </szak>
+    </ora>
+    <ora id="3" tipus="elmélet">
+        <targy> Vállalati Információs Rendszerek </targy>
+        <idopont>
+            <nap> Szerda </nap>
+            <tol> 14:00 </tol>
+            <ig>  16:00 </ig>
+        </idopont>
+        <helyszin> In 103 </helyszin>
+        <oktato> Dr. Sasvári Péter </oktato>
+        <szak> Programtervező Informatikus </szak>
+    </ora>
+    <ora id="4" tipus="gyakorlat">
+        <targy> Vállalati Információs Rendszerek </targy>
+        <idopont>
+            <nap> Szerda </nap>
+            <tol> 18:00 </tol>
+            <ig>  20:00 </ig>
+        </idopont>
+        <helyszin> In 103 </helyszin>
+        <oktato> Dr. Sasvári Péter </oktato>
+        <szak> Programtervező Informatikus </szak>
+    </ora>
+    <!-- A dokumentumot a codebeautify.org-on alakítottam táblázattá. -->
+</IGRYHL_orarend>
