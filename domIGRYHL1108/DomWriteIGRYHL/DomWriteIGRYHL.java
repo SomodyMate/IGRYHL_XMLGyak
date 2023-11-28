@@ -40,7 +40,7 @@ public class DomWriteIGRYHL {
             transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
 
             DOMSource source = new DOMSource(doc);
-            File myFile = new File("kurzusfelvetel1QTFL19.xml");
+            File myFile = new File("kurzusfelvetel1IGRYHL.xml");
 
             StreamResult console = new StreamResult(System.out);
             StreamResult file = new StreamResult(myFile);
