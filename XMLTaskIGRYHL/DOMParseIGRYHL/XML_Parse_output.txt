@@ -1,0 +1,97 @@
+Root element: gepjarmu
+
+Current element: szemelygepjarmu
+Rendszam: AB-CD-123
+Tulaj jogsi: HU345678
+Motor szama: 100FDSAF008F1G
+Alvaz szama: 0FSFDSFFF70000019
+Gyartasi sorszam: 15B
+Casco azonosito: FSDAG34
+
+Current element: szemelygepjarmu
+Rendszam: AA-BB-720
+Tulaj jogsi: HU346544
+Motor szama: 100FDFGDS58F1G
+Alvaz szama: 0FSFDSCCC70000019
+Gyartasi sorszam: 10B
+Casco azonosito: HSDAG34
+
+Current element: szemelygepjarmu
+Rendszam: KD-QS-510
+Tulaj jogsi: RO378544
+Motor szama: 540FDFGDS58F1G
+Alvaz szama: 3HSFDSCCC70000019
+Gyartasi sorszam: 98C
+Casco azonosito: nincs
+
+Current element: tulajdonos
+Jogositvany szama: HU345678
+Vezeteknev: Kiss
+Keresztnev: Peter
+
+Current element: tulajdonos
+Jogositvany szama: HU346544
+Vezeteknev: Kovacs
+Keresztnev: Mariann
+
+Current element: tulajdonos
+Jogositvany szama: RO378544
+Vezeteknev: Molnar
+Keresztnev: Mate
+
+Current element: motor
+Motorszam: 100FDSAF008F1G
+Uzemamyag: dizel
+Loero: 68
+Nyomatek: 160 Nm
+
+Current element: motor
+Motorszam: 100FDFGDS58F1G
+Uzemamyag: benzin
+Loero: 75
+Nyomatek: 107 Nm
+
+Current element: motor
+Motorszam: 540FDFGDS58F1G
+Uzemamyag: elektromos
+Loero: 150
+Nyomatek: 310 Nm
+
+Current element: karosszeria
+Alvazszam: 0FSFDSFFF70000019
+Felulet: matt
+Matrica: nincs
+Szin #1: feher
+Szin #2: szürke
+
+Current element: karosszeria
+Alvazszam: 0FSFDSCCC70000019
+Felulet: teljes
+Matrica: van
+Szin #1: feher
+
+Current element: karosszeria
+Alvazszam: 3HSFDSCCC70000019
+Felulet: reszleges
+Matrica: nincs
+Szin #1: zöld
+Szin #2: fekete
+Szin #3: szürke
+
+Current element: gyartas
+GyartasID: 15B
+Marka: Ford
+Modell: Fusion
+Gyartasi ev: 2004
+
+Current element: gyartas
+GyartasID: 10B
+Marka: Renault
+Modell: Twingo
+Gyartasi ev: 2011
+
+Current element: gyartas
+GyartasID: 98C
+Marka: Volkswagen
+Modell: ID.3
+Gyartasi ev: 2021

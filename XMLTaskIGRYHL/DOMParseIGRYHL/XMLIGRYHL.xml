@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<gepjarmu xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="XMLSchemaIGRYHL.xsd">
+
+    <!-- személygépjárművek -->
+
+    <szemelygepjarmu rendszam="AB-CD-123">
+        <tulaj_jogsi>HU345678</tulaj_jogsi>
+        <motor_szama>100FDSAF008F1G</motor_szama>
+        <alvaz_szama>0FSFDSFFF70000019</alvaz_szama>
+        <gyartas_sorszam>15B</gyartas_sorszam>
+        <casco_azon>FSDAG34</casco_azon>
+    </szemelygepjarmu>
+
+    <szemelygepjarmu rendszam="AA-BB-720">
+        <tulaj_jogsi>HU346544</tulaj_jogsi>
+        <motor_szama>100FDFGDS58F1G</motor_szama>
+        <alvaz_szama>0FSFDSCCC70000019</alvaz_szama>
+        <gyartas_sorszam>10B</gyartas_sorszam>
+        <casco_azon>HSDAG34</casco_azon>
+    </szemelygepjarmu>
+
+    <szemelygepjarmu rendszam="KD-QS-510">
+        <tulaj_jogsi>RO378544</tulaj_jogsi>
+        <motor_szama>540FDFGDS58F1G</motor_szama>
+        <alvaz_szama>3HSFDSCCC70000019</alvaz_szama>
+        <gyartas_sorszam>98C</gyartas_sorszam>
+    </szemelygepjarmu>
+
+    <!-- tulajdonosok -->
+
+    <tulajdonos jogositvany_szama="HU345678">
+        <nev>
+            <vezeteknev>Kiss</vezeteknev>
+            <keresztnev>Péter</keresztnev>
+        </nev>
+    </tulajdonos>
+
+    <tulajdonos jogositvany_szama="HU346544">
+        <nev>
+            <vezeteknev>Kovács</vezeteknev>
+            <keresztnev>Mariann</keresztnev>
+        </nev>
+    </tulajdonos>
+
+    <tulajdonos jogositvany_szama="RO378544">
+        <nev>
+            <vezeteknev>Molnár</vezeteknev>
+            <keresztnev>Máté</keresztnev>
+        </nev>
+    </tulajdonos>
+
+    <!-- motorok -->
+
+    <motor motorszam="100FDSAF008F1G">
+        <uzemanyag>dizel</uzemanyag>
+        <loero>68</loero>
+        <nyomatek>160 Nm</nyomatek>
+    </motor>
+
+    <motor motorszam="100FDFGDS58F1G">
+        <uzemanyag>benzin</uzemanyag>
+        <loero>75</loero>
+        <nyomatek>107 Nm</nyomatek>
+    </motor>
+
+    <motor motorszam="540FDFGDS58F1G">
+        <uzemanyag>elektromos</uzemanyag>
+        <loero>150</loero>
+        <nyomatek>310 Nm</nyomatek>
+    </motor>
+
+    <!-- karosszériák -->
+
+    <karosszeria alvazszam="0FSFDSFFF70000019">
+        <felulet>matt</felulet>
+        <matrica>nincs</matrica>
+        <szin>feher</szin>
+        <szin>szürke</szin>
+    </karosszeria>
+
+    <karosszeria alvazszam="0FSFDSCCC70000019">
+        <felulet>teljes</felulet>
+        <matrica>van</matrica>
+        <szin>feher</szin>
+    </karosszeria>
+
+    <karosszeria alvazszam="3HSFDSCCC70000019">
+        <felulet>reszleges</felulet>
+        <matrica>nincs</matrica>
+        <szin>zöld</szin>
+        <szin>fekete</szin>
+        <szin>szürke</szin>
+    </karosszeria>
+
+    <!-- gyártási infók -->
+
+    <gyartas gyartasID="15B">
+        <marka>Ford</marka>
+        <modell>Fusion</modell>
+        <gyartasi_ev>2004</gyartasi_ev>
+    </gyartas>
+
+    <gyartas gyartasID="10B">
+        <marka>Renault</marka>
+        <modell>Twingo</modell>
+        <gyartasi_ev>2011</gyartasi_ev>
+    </gyartas>
+
+    <gyartas gyartasID="98C">
+        <marka>Volkswagen</marka>
+        <modell>ID.3</modell>
+        <gyartasi_ev>2021</gyartasi_ev>
+    </gyartas>
+
+</gepjarmu>
