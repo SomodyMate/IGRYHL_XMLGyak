@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+    xs:noNamespaceSchemaLocation="studentIGRYHL.xsd">
+
+    <student id="01">
+        <keresztnev>Máté</keresztnev>
+        <vezeteknev>Somody</vezeteknev>
+        <becenev>Mátéka</becenev>
+        <kor>22</kor>
+    </student>
+
+    <student id="02">
+        <keresztnev>Levente</keresztnev>
+        <vezeteknev>Nagy</vezeteknev>
+        <becenev>Levuska</becenev>
+        <kor>6</kor>
+    </student>
+
+    <student id="03">
+        <keresztnev>Áron</keresztnev>
+        <vezeteknev>Kovács</vezeteknev>
+        <becenev>Roni</becenev>
+        <kor>45</kor>
+    </student>
+</class>
