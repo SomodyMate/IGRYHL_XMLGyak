@@ -23,6 +23,8 @@
     <xs:element name="modell" type="xs:string"/>
     <xs:element name="gyartasi_ev" type="xs:gYear"/>
 
+    <xs:element name="ido_kezdete" type="xs:date">
+
     <!--Saját típusok-->
 
     <xs:simpleType name="rendszamTipus">
@@ -141,6 +143,17 @@
                     </xs:complexType>
                 </xs:element>
 
+                <xs:element name="birtoklas" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="ido_kezdete"/>
+                        </xs:sequence>
+                            <xs:attribute name="rendszam" type="rendszamTipus" use="required"/>
+                            <xs:attribute name="jogositvany_szama" type="jogositvany_szamaTipus" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+
+
             </xs:sequence>
         </xs:complexType>
 
@@ -192,6 +205,13 @@
             <xs:selector xpath="szemelygpjarmu" />
             <xs:field xpath="gyartas_sorszam" />
         </xs:keyref>
+
+        <xs:keyref refer="szemelygepjarmu_kulcs" name="birtoklas_idegen_kulcs">
+            <xs:selector xpath="birtoklas" />
+            <xs:field xpath="@rendszam" />
+            <xs:field xpath="@jogositvany_szama" />
+        </xs:keyref>
+
 
         <!-- 1-1 kapcsolat -->
         <xs:unique name="uniqueMotor">

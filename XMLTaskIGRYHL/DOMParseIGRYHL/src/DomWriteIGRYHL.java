@@ -20,17 +20,17 @@ public class DOMWriteIGRYHL {
 
     public static void main(String[] args) {
         try {
-            // XML fájl beolvasása
+            // XML fajl beolvasasa
             File xmlFile = new File("XMLIGRYHL.xml");
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
             Document doc = builder.parse(xmlFile);
 
-            // Konzolra írás
+            // konzolra iras
             System.out.println("XML dokumentum fa struktúrában:");
             printDocument(doc.getDocumentElement(), "");
 
-            // Fájlba írás
+            // fajlba iras
             writeXml(doc, new File("XMLIGRYHL1.xml"));
 
         } catch (ParserConfigurationException | IOException | TransformerException e) {

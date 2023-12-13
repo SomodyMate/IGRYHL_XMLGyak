@@ -1,0 +1,93 @@
+gepjarmu
+|-- szemelygepjarmu (rendszam="AB-CD-123")
+|   |-- tulaj_jogsi: HU345678
+|   |-- motor_szama: 100FDSAF008F1G
+|   |-- alvaz_szama: 0FSFDSFFF70000019
+|   |-- gyartas_sorszam: 15B
+|   |-- casco_azon: FSDAG34
+|
+|-- szemelygepjarmu (rendszam="AA-BB-720")
+|   |-- tulaj_jogsi: HU346544
+|   |-- motor_szama: 100FDFGDS58F1G
+|   |-- alvaz_szama: 0FSFDSCCC70000019
+|   |-- gyartas_sorszam: 10B
+|   |-- casco_azon: HSDAG34
+|
+|-- szemelygepjarmu (rendszam="KD-QS-510")
+|   |-- tulaj_jogsi: RO378544
+|   |-- motor_szama: 540FDFGDS58F1G
+|   |-- alvaz_szama: 3HSFDSCCC70000019
+|   |-- gyartas_sorszam: 98C
+|
+|-- tulajdonos (jogositvany_szama="HU345678")
+|   |-- nev
+|       |-- vezeteknev: Kiss
+|       |-- keresztnev: Péter
+|
+|-- tulajdonos (jogositvany_szama="HU346544")
+|   |-- nev
+|       |-- vezeteknev: Kovács
+|       |-- keresztnev: Mariann
+|
+|-- tulajdonos (jogositvany_szama="RO378544")
+|   |-- nev
+|       |-- vezeteknev: Molnár
+|       |-- keresztnev: Máté
+|
+|-- motor (motorszam="100FDSAF008F1G")
+|   |-- uzemanyag: dizel
+|   |-- loero: 68
+|   |-- nyomatek: 160 Nm
+|
+|-- motor (motorszam="100FDFGDS58F1G")
+|   |-- uzemanyag: benzin
+|   |-- loero: 75
+|   |-- nyomatek: 107 Nm
+|
+|-- motor (motorszam="540FDFGDS58F1G")
+|   |-- uzemanyag: elektromos
+|   |-- loero: 150
+|   |-- nyomatek: 310 Nm
+|
+|-- karosszeria (alvazszam="0FSFDSFFF70000019")
+|   |-- felulet: matt
+|   |-- matrica: nincs
+|   |-- szin: feher
+|   |-- szin: szürke
+|
+|-- karosszeria (alvazszam="0FSFDSCCC70000019")
+|   |-- felulet: teljes
+|   |-- matrica: van
+|   |-- szin: feher
+|
+|-- karosszeria (alvazszam="3HSFDSCCC70000019")
+|   |-- felulet: reszleges
+|   |-- matrica: nincs
+|   |-- szin: zöld
+|   |-- szin: fekete
+|   |-- szin: szürke
+|
+|-- gyartas (gyartasID="15B")
+|   |-- marka: Ford
+|   |-- modell: Fusion
+|   |-- gyartasi_ev: 2004
+|
+|-- gyartas (gyartasID="10B")
+|   |-- marka: Renault
+|   |-- modell: Twingo
+|   |-- gyartasi_ev: 2011
+|
+|-- gyartas (gyartasID="98C")
+|   |-- marka: Volkswagen
+|   |-- modell: ID.3
+|   |-- gyartasi_ev: 2021
+|
+|-- birtoklas (rendszam="AB-CD-123", jogositvany_szama="HU345678")
+|   |-- ido_kezdete: 2023-01-01
+|
+|-- birtoklas (rendszam="AA-BB-720", jogositvany_szama="HU346544")
+|   |-- ido_kezdete: 2022-11-04
+|
+|-- birtoklas (rendszam="KD-QS-510", jogositvany_szama="RO378544")
+|   |-- ido_kezdete: 2021-05-18
+|

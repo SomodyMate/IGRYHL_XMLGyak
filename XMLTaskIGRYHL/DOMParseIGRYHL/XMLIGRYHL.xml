@@ -113,4 +113,18 @@
         <gyartasi_ev>2021</gyartasi_ev>
     </gyartas>
 
+    <!-- birtoklási kapcsolatok -->
+
+    <birtoklas rendszam="AB-CD-123" jogositvany_szama="HU345678">
+        <ido_kezdete>2023-01-01</ido_kezdete>
+    </birtoklas>
+
+    <birtoklas rendszam="AA-BB-720" jogositvany_szama="HU346544">
+        <ido_kezdete>2022-11-04</ido_kezdete>
+    </birtoklas>
+
+    <birtoklas rendszam="KD-QS-510" jogositvany_szama="RO378544">
+        <ido_kezdete>2021-05-18</ido_kezdete>
+    </birtoklas>
+
 </gepjarmu>
