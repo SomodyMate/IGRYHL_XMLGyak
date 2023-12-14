@@ -1,4 +1,4 @@
-package hu.domparse.IGRYHL;
+package DomQueryIGRYHL;
 
 import java.io.IOException;
 

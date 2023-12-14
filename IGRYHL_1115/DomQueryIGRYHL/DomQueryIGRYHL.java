@@ -1,4 +1,4 @@
-package domIGRYHL1115;
+package DomQueryIGRYHL;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -17,8 +17,7 @@ public class DomQueryIGRYHL {
     public static void main(String[] args) {
         try {
             // XML fájl beolvasása
-            File xmlFile = new File("/Users/somodymate/Downloads/University/Adatkezelés XML-ben/IGRYHL_XMLGyak/IGRYHL_XMLGyak/IGRYHL_1115/DomQueryIGRYHL/kurzusfelvetelIGRYHL.xml\n" + //
-                    "");
+            File xmlFile = new File("kurzusfelvetelIGRYHL.xml");
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
             Document doc = dBuilder.parse(xmlFile);

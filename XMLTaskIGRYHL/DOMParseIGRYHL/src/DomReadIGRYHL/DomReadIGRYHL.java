@@ -1,4 +1,4 @@
-package hu.domparse.IGRYHL;
+package DomReadIGRYHL;
 
 import java.io.File;
 import java.io.FileOutputStream;

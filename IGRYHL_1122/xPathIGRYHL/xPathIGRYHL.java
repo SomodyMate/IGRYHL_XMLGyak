@@ -1,4 +1,4 @@
-package xpathIGRYHL;
+package xPathIGRYHL;
 
 import org.w3c.dom.*;
 import javax.xml.parsers.*;
@@ -12,7 +12,7 @@ public class xPathIGRYHL {
 
     public static void main(String[] args) {
         try {
-            InputStream inputStream = new FileInputStream("/Users/somodymate/Downloads/University/Adatkezelés XML-ben/IGRYHL_XMLGyak/IGRYHL_XMLGyak/IGRYHL_1122/");
+            InputStream inputStream = new FileInputStream("/Users/somodymate/Downloads/University/Adatkezelés XML-ben/IGRYHL_XMLGyak/IGRYHL_XMLGyak/IGRYHL_1122/kurzusfelvetelIGRYHL.xml");
 
             DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();

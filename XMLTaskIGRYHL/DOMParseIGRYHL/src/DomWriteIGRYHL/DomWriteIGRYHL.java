@@ -1,4 +1,4 @@
-package hu.domparse.IGRYHL;
+package DomWriteIGRYHL;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -16,7 +16,7 @@ import javax.xml.transform.stream.StreamResult;
 
 import org.w3c.dom.Document;
 
-public class DOMWriteIGRYHL {
+public class DomWriteIGRYHL {
 
     public static void main(String[] args) {
         try {

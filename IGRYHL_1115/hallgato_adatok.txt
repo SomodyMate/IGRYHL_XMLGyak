@@ -1,0 +1,8 @@
+ hallgato: 
+        Somody Máté
+        2001.05.19
+        programtervező
+    
+  hnev: Somody Máté
+  szulev: 2001.05.19
+  szak: programtervező

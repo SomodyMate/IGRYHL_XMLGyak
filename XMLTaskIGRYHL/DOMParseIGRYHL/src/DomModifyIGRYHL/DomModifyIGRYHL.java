@@ -1,4 +1,4 @@
-package hu.domparse.IGRYHL;
+package DomModifyIGRYHL;
 
 import java.io.File;
 import java.io.IOException;
