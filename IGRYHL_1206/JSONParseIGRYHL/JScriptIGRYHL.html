@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Órarend</title>
+</head>
+
+<body>
+    <div id="result"></div>
+
+    <script>
+        var jsonContent = `{
+            "IGRYHL_kurzusfelvetel": {
+                "tanev": 5,
+                "egyetem": "ME",
+                "hallgato": {
+                    "hnev": "Somody Máté",
+                    "szulev": 2001,
+                    "szak": {
+                        "evf": 5,
+                        "szak": "Programtervező informatika"
+                    }
+                },
+                "kurzusok": {
+                    "kurzus": [
+                        {
+                            "id": "GEIAL332-B",
+                            "kurzusnev": "Adatkezelés XML-ben",
+                            "kredit": 5,
+                            "hely": "XXXII A1 magasfsz",
+                            "idopont": "Kedd 12:00-14:00",
+                            "oktato": "Dr. Bednarik László"
+                        },
+                        {
+                            "id": "GEIAL315-B",
+                            "nyelv": "angol",
+                            "kurzusnev": "Vállalati információs rendszerek fejlesztése",
+                            "kredit": 5,
+                            "hely": "In/101 In I. e. 101",
+                            "idopont": "Szerda 14:00-16:00",
+                            "oktato": "Dr. Sasvári Péter"
+                        }
+                    ]
+                }
+            }
+        }`;
+
+        var jsonObject = JSON.parse(jsonContent);
+
+        displayJsonObject("", jsonObject, document.getElementById("result"));
+
+        function displayJsonObject(prefix, jsonObject, targetElement) {
+            for (var key in jsonObject) {
+                if (jsonObject.hasOwnProperty(key)) {
+                    var keyStr = key;
+                    var value = jsonObject[key];
+
+                    if (typeof value === 'object') {
+                        displayJsonObject(prefix + keyStr + ": ", value, targetElement);
+                    } else {
+                        targetElement.innerHTML += keyStr + ": " + value + "<br>";
+                    }
+                }
+            }
+            targetElement.innerHTML += "<br>";
+        }
+    </script>
+
+</body>
+
+</html>

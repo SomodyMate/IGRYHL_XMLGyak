@@ -1,0 +1,35 @@
+{
+    "IGRYHL_kurzusfelvetel": {
+        "@tanev": "5",
+        "@egyetem": "ME",
+        "hallgato": {
+            "hnev": "Somody Máté",
+            "szulev": "2001",
+            "szak": {
+                "@evf": "5",
+                "#text": "Programtervező informatika"
+            }
+        },
+        "kurzusok": {
+            "kurzus": [
+                {
+                    "@id": "GEIAL332-B",
+                    "kurzusnev": "Adatkezelés XML-ben",
+                    "kredit": "5",
+                    "hely": "XXXII A1 magasfsz",
+                    "idopont": "Kedd 12:00-14:00",
+                    "oktato": "Dr. Bednarik László"
+                },
+                {
+                    "@id": "GEIAL315-B",
+                    "@nyelv": "angol",
+                    "kurzusnev": "Vállalati információs rendszerek fejlesztése",
+                    "kredit": "5",
+                    "hely": "In/101 In I. e. 101",
+                    "idopont": "Szerda 14:00-16:00",
+                    "oktato": "Dr. Sasvári Péter"
+                }
+            ]
+        }
+    }
+}
