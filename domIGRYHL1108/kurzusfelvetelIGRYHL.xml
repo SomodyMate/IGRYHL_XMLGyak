@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IGRYHL_kurzusfelvetel tanev="2023/24" egyetem="ME">
+
+    <hallgato>
+        <hnev>Somody Máté</hnev>
+        <szulev>2001.05.19</szulev>
+        <szak evf="5">programtervező</szak>
+    </hallgato>
+
+    <kurzusok>
+        <kurzus id="GEIAL332-B" jovahagyas="igen">
+            <kurzusnev>Adatkezelés XML-ben</kurzusnev>
+            <kredit>5</kredit>
+            <hely>A1 32.előadó</hely>
+            <idopont>Kedd 12-14</idopont>
+            <oktato>Dr. Bednarik László</oktato>
+        </kurzus>
+
+        <kurzus id="GEIAL315-B" jovahagyas="igen">
+            <kurzusnev>Vállalati Információs Rendszerek</kurzusnev>
+            <kredit>5</kredit>
+            <hely>In 103</hely>
+            <idopont>Szerda 14-16</idopont>
+            <oktato>Dr. Sasvári Péter</oktato>
+        </kurzus>
+
+
+    </kurzusok>
+
+
+</IGRYHL_kurzusfelvetel>

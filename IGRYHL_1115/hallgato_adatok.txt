@@ -1,4 +1,4 @@
- hallgato: 
+hallgato: 
         Somody Máté
         2001.05.19
         programtervező

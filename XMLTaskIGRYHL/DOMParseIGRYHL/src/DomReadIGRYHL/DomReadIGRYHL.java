@@ -19,13 +19,13 @@ public class DomReadIGRYHL {
 
     public static void main(String argv[]) throws ParserConfigurationException, SAXException, IOException {
 
-        // Adatok kiirasa console-ra
+        // adatok kiirasa console-ra
 
         Feldolgozas();
 
-        // Adatok mentese TXT-be
+        // adatok mentese txt-be
 
-        PrintStream out = new PrintStream(new FileOutputStream("XML_Parse_output.txt"));
+        PrintStream out = new PrintStream(new FileOutputStream("XML_Read_output.txt"));
         System.setOut(out);
 
         Feldolgozas();
@@ -178,7 +178,7 @@ public class DomReadIGRYHL {
             }
         }
 
-        // gyártási infók kiirasa
+        // gyartasi infok kiirasa
 
         nList = doc.getElementsByTagName("gyartas");
 
@@ -208,6 +208,31 @@ public class DomReadIGRYHL {
 
             }
         }
+
+        // birtoklasok kiirasa
+
+        nList = doc.getElementsByTagName("birtoklas");
+
+        for (int i = 0; i < nList.getLength(); i++) {
+            Node nNode = nList.item(i);
+            System.out.println("\nCurrent element: " + nNode.getNodeName());
+
+            if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+
+                Element elem = (Element) nNode;
+
+                String rendszam = elem.getAttribute("rendszam");
+                String jogsiSzama = elem.getAttribute("jogositvany_szama");
+
+                Node node1 = elem.getElementsByTagName("birtoklas_kezdete").item(0);
+                String birtoklasKezdete = node1.getTextContent();
+
+                System.out.println("Rendszam: " + rendszam);
+                System.out.println("Jogositvany szama: " + jogsiSzama);
+                System.out.println("Birtoklas kezdete: " + birtoklasKezdete);
+            }
+        }
+
 
         return;
     }

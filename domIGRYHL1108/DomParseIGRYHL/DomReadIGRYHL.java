@@ -1,4 +1,4 @@
-package domIGRYHL;
+ package DomParseIGRYHL;
 
 import java.io.File;
 import java.io.IOException;

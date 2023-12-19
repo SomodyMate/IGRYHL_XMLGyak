@@ -6,13 +6,13 @@ import javax.xml.xpath.*;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.FileInputStream;
-import org.xml.sax.SAXException; 
+import org.xml.sax.SAXException;
 
 public class xPathIGRYHL {
 
     public static void main(String[] args) {
         try {
-            InputStream inputStream = new FileInputStream("/Users/somodymate/Downloads/University/Adatkezelés XML-ben/IGRYHL_XMLGyak/IGRYHL_XMLGyak/IGRYHL_1122/kurzusfelvetelIGRYHL.xml");
+            InputStream inputStream = new FileInputStream("/Users/somodymate/Downloads/University/Adatkezelés XML-ben/IGRYHL_XMLGyak/IGRYHL_XMLGyak/IGRYHL_1122/studentIGRYHL.xml");
 
             DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();

@@ -23,7 +23,7 @@
     <xs:element name="modell" type="xs:string"/>
     <xs:element name="gyartasi_ev" type="xs:gYear"/>
 
-    <xs:element name="ido_kezdete" type="xs:date">
+    <xs:element name="ido_kezdete" type="xs:date"/>
 
     <!--Saját típusok-->
 
@@ -77,148 +77,144 @@
 
 
     <!--Felépítés-->
+    <xs:complexType name="gepjarmuType">
+        <xs:sequence>
+            <xs:element name="szemelygepjarmu" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element ref="tulaj_jogsi" />
+                        <xs:element ref="motor_szama"/>
+                        <xs:element ref="alvaz_szama"/>
+                        <xs:element ref="gyartas_sorszam" />
+                        <xs:element ref="casco_azon" minOccurs="0"/>
+                    </xs:sequence>
+                    <xs:attribute name="rendszam" type="rendszamTipus" use="required"/>
+                </xs:complexType>
+            </xs:element>
 
-    <xs:element name="gepjarmu">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="szemelygepjarmu" minOccurs="1" maxOccurs="unbounded">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element ref="tulaj_jogsi" />
-                            <xs:element ref="motor_szama"/>
-                            <xs:element ref="alvaz_szama"/>
-                            <xs:element ref="gyartas_sorszam" />
-                            <xs:element ref="casco_azon" minOccurs="0"/>
-                        </xs:sequence>
+            <xs:element name="tulajdonos" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="nev">
+                         <xs:complexType>
+                            <xs:sequence>
+                                <xs:element ref="vezeteknev" />
+                                <xs:element ref="keresztnev" />
+                            </xs:sequence>
+                        </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="jogositvany_szama" type="jogositvany_szamaTipus" use="required"/>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="motor" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element ref="uzemanyag" />
+                        <xs:element ref="loero" />
+                        <xs:element ref="nyomatek" />
+                    </xs:sequence>
+                    <xs:attribute name="motorszam" type="motorszamTipus" use="required"/>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="karosszeria" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element ref="felulet" />
+                        <xs:element ref="matrica" />
+                        <xs:element ref="szin" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                    <xs:attribute name="alvazszam" type="alvazszamTipus" use="required"/>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="gyartas" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element ref="marka" />
+                        <xs:element ref="modell" />
+                        <xs:element ref="gyartasi_ev" />
+                    </xs:sequence>
+                    <xs:attribute name="gyartasID" type="gyartoIDTipus" use="required"/>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="birtoklas" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element ref="birtoklas_kezdete"/>
+                    </xs:sequence>
                         <xs:attribute name="rendszam" type="rendszamTipus" use="required"/>
-                    </xs:complexType>
-                </xs:element>
-
-                <xs:element name="tulajdonos" minOccurs="1" maxOccurs="unbounded">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="nev">
-                            <xs:complexType>
-                                <xs:sequence>
-                                    <xs:element ref="vezeteknev" />
-                                    <xs:element ref="keresztnev" />
-                                </xs:sequence>
-                            </xs:complexType>
-                            </xs:element>
-                        </xs:sequence>
                         <xs:attribute name="jogositvany_szama" type="jogositvany_szamaTipus" use="required"/>
-                    </xs:complexType>
-                </xs:element>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
 
-                <xs:element name="motor" minOccurs="1" maxOccurs="unbounded">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element ref="uzemanyag" />
-                            <xs:element ref="loero" />
-                            <xs:element ref="nyomatek" />
-                        </xs:sequence>
-                        <xs:attribute name="motorszam" type="motorszamTipus" use="required"/>
-                    </xs:complexType>
-                </xs:element>
+    <xs:element name="gepjarmu" type="gepjarmuType"/>
 
-                <xs:element name="karosszeria" minOccurs="1" maxOccurs="unbounded">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element ref="felulet" />
-                            <xs:element ref="matrica" />
-                            <xs:element ref="szin" maxOccurs="unbounded"/>
-                        </xs:sequence>
-                        <xs:attribute name="alvazszam" type="alvazszamTipus" use="required"/>
-                    </xs:complexType>
-                </xs:element>
+    <!--Kulcsok-->
 
-                <xs:element name="gyartas" minOccurs="1" maxOccurs="unbounded">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element ref="marka" />
-                            <xs:element ref="modell" />
-                            <xs:element ref="gyartasi_ev" />
-                        </xs:sequence>
-                        <xs:attribute name="gyartasID" type="gyartoIDTipus" use="required"/>
-                    </xs:complexType>
-                </xs:element>
+    <xs:key name="szemelygepjarmu_kulcs">
+        <xs:selector xpath="szemelygepjarmu" />
+        <xs:field xpath="@rendszam" />
+    </xs:key>
 
-                <xs:element name="birtoklas" minOccurs="1" maxOccurs="unbounded">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element ref="ido_kezdete"/>
-                        </xs:sequence>
-                            <xs:attribute name="rendszam" type="rendszamTipus" use="required"/>
-                            <xs:attribute name="jogositvany_szama" type="jogositvany_szamaTipus" use="required"/>
-                    </xs:complexType>
-                </xs:element>
+    <xs:key name="tulajdonos_kulcs">
+        <xs:selector xpath="tulajdonos" />
+        <xs:field xpath="@jogositvany_szama" />
+    </xs:key>
 
+    <xs:key name="motor_kulcs">
+        <xs:selector xpath="motor" />
+        <xs:field xpath="@motorszam" />
+    </xs:key>
 
-            </xs:sequence>
-        </xs:complexType>
+    <xs:key name="karosszeria_kulcs">
+        <xs:selector xpath="karosszeria" />
+        <xs:field xpath="@alvazszam" />
+    </xs:key>
 
-        <!--Kulcsok-->
+    <xs:key name="gyartas_kulcs">
+        <xs:selector xpath="gyartas" />
+        <xs:field xpath="@gyartasID" />
+    </xs:key>
 
-        <xs:key name="szemelygepjarmu_kulcs">
-            <xs:selector xpath="szemelygepjarmu" />
-            <xs:field xpath="@rendszam" />
-        </xs:key>
+    <!--Idegen kulcsok-->
 
-        <xs:key name="tulajdonos_kulcs">
-            <xs:selector xpath="tulajdonos" />
-            <xs:field xpath="@jogositvany_szama" />
-        </xs:key>
+    <xs:keyref refer="tulajdonos_kulcs" name="tulaj_idegen_kulcs">
+        <xs:selector xpath="szemelygepjarmu" />
+        <xs:field xpath="tulaj_jogsi" />
+    </xs:keyref>
 
-        <xs:key name="motor_kulcs">
-            <xs:selector xpath="motor" />
-            <xs:field xpath="@motorszam" />
-        </xs:key>
+    <xs:keyref refer="motor_kulcs" name="motor_idegen_kulcs">
+        <xs:selector xpath="szemelygepjarmu" />
+        <xs:field xpath="motor_szama" />
+    </xs:keyref>
 
-        <xs:key name="karosszeria_kulcs">
-            <xs:selector xpath="karosszeria" />
-            <xs:field xpath="@alvazszam" />
-        </xs:key>
+    <xs:keyref refer="karosszeria_kulcs" name="karosszeria_idegen_kulcs">
+        <xs:selector xpath="szemelygepjarmu" />
+        <xs:field xpath="alvaz_szama" />
+    </xs:keyref>
 
-        <xs:key name="gyartas_kulcs">
-            <xs:selector xpath="gyartas" />
-            <xs:field xpath="@gyartasID" />
-        </xs:key>
+    <xs:keyref refer="gyartas_kulcs" name="gyartas_idegen_kulcs">
+        <xs:selector xpath="szemelygepjarmu" />
+        <xs:field xpath="gyartas_sorszam" />
+    </xs:keyref>
 
-        <!--Idegen kulcsok-->
-
-        <xs:keyref refer="tulajdonos_kulcs" name="tulaj_idegen_kulcs">
-            <xs:selector xpath="szemelygpjarmu" />
-            <xs:field xpath="tulaj_jogsi" />
-        </xs:keyref>
-
-        <xs:keyref refer="motor_kulcs" name="motor_idegen_kulcs">
-            <xs:selector xpath="szemelygpjarmu" />
-            <xs:field xpath="motor_szama" />
-        </xs:keyref>
-
-        <xs:keyref refer="karosszeria_kulcs" name="karosszeria_idegen_kulcs">
-            <xs:selector xpath="szemelygpjarmu" />
-            <xs:field xpath="alvaz_szama" />
-        </xs:keyref>
-
-        <xs:keyref refer="gyartas_kulcs" name="gyartas_idegen_kulcs">
-            <xs:selector xpath="szemelygpjarmu" />
-            <xs:field xpath="gyartas_sorszam" />
-        </xs:keyref>
-
-        <xs:keyref refer="szemelygepjarmu_kulcs" name="birtoklas_idegen_kulcs">
-            <xs:selector xpath="birtoklas" />
-            <xs:field xpath="@rendszam" />
-            <xs:field xpath="@jogositvany_szama" />
-        </xs:keyref>
+    <xs:keyref refer="szemelygepjarmu_kulcs" name="birtoklas_idegen_kulcs"/>
+        <xs:selector xpath="birtoklas" />
+        <xs:field xpath="@rendszam" />
+        <xs:field xpath="@jogositvany_szama" />
+    </xs:keyref>
 
 
-        <!-- 1-1 kapcsolat -->
-        <xs:unique name="uniqueMotor">
-            <xs:selector xpath="motor"/>
-            <xs:field xpath="@motorszam"/>
-        </xs:unique>
-
-    </xs:element>
+    <!-- 1-1 kapcsolat -->
+    <xs:unique name="uniqueTartalmazas">
+        <xs:selector xpath="karosszeria"/>
+        <xs:field xpath="@alvazszam"/>
+    </xs:unique>
 
 </xs:schema>

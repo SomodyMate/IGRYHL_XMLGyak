@@ -1,4 +1,4 @@
-package domIGRYHL1108;
+package DomWriteIGRYHL;
 
 import java.io.File;
 
