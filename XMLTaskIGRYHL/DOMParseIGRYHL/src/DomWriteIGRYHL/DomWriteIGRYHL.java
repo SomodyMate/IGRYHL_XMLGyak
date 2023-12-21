@@ -64,7 +64,7 @@ public class DomWriteIGRYHL {
         addBirtoklas(doc, gepjarmuElement, "KD-QS-510", "RO378544", "2021-05-18");
 
         // fajl mentese
-        String fileName = "XMLIGRYHL1.xml";
+        String fileName = "XMLIGRYHL2.xml";
         saveXML(doc, fileName);
 
         // XML kiíratása a konzolra

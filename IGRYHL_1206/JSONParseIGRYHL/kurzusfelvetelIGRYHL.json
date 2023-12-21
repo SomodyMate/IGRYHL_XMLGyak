@@ -1,35 +1,50 @@
 {
-    "IGRYHL_kurzusfelvetel": {
-        "@tanev": "5",
-        "@egyetem": "ME",
-        "hallgato": {
-            "hnev": "Somody Máté",
-            "szulev": "2001",
-            "szak": {
-                "@evf": "5",
-                "#text": "Programtervező informatika"
-            }
+  "IGRYHL_kurzusfelvetel": {
+    "kurzusok": [
+      {
+        "kurzus": "Adatkezelés XML-ben",
+        "idopont": {
+          "nap": "kedd",
+          "tol": 12,
+          "ig": 14
         },
-        "kurzusok": {
-            "kurzus": [
-                {
-                    "@id": "GEIAL332-B",
-                    "kurzusnev": "Adatkezelés XML-ben",
-                    "kredit": "5",
-                    "hely": "XXXII A1 magasfsz",
-                    "idopont": "Kedd 12:00-14:00",
-                    "oktato": "Dr. Bednarik László"
-                },
-                {
-                    "@id": "GEIAL315-B",
-                    "@nyelv": "angol",
-                    "kurzusnev": "Vállalati információs rendszerek fejlesztése",
-                    "kredit": "5",
-                    "hely": "In/101 In I. e. 101",
-                    "idopont": "Szerda 14:00-16:00",
-                    "oktato": "Dr. Sasvári Péter"
-                }
-            ]
-        }
-    }
+        "helyszin": "XXXII. előadó",
+        "oktato": "Dr. Bednarik László",
+        "szak": "Programtervező informatikus"
+      },
+      {
+        "kurzus": "Adatkezelés XML-ben",
+        "idopont": {
+          "nap": "szerda",
+          "tol": 10,
+          "ig": 12
+        },
+        "helyszin": "Inf. 101",
+        "oktato": "Dr. Bednarik László",
+        "szak": "Programtervező informatikus"
+      },
+      {
+        "kurzus": "Vállalati Információs Rendszerek Fejlesztése",
+        "idopont": {
+          "nap": "szerda",
+          "tol": 14,
+          "ig": 16
+        },
+        "helyszin": "Inf. 101",
+        "oktato": "Dr. Sasvári Péter",
+        "szak": "Programtervező informatikus"
+      }
+      {
+        "kurzus": "Vállalati Információs Rendszerek Fejlesztése",
+        "idopont": {
+          "nap": "szerda",
+          "tol": 18,
+          "ig": 20
+        },
+        "helyszin": "Inf. 101",
+        "oktato": "Dr. Sasvári Péter",
+        "szak": "Programtervező informatikus"
+      }
+    ]
+  }
 }

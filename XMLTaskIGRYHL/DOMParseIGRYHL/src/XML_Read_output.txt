@@ -1,112 +1,308 @@
-Root element: gepjarmu
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gepjarmu xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="XMLSchemaIGRYHL.xsd">
+        
+  
+  <!-- személygépjárművek -->
+        
+  
+  <szemelygepjarmu rendszam="AB-CD-123">
+                
+    
+    <tulaj_jogsi>HU345678</tulaj_jogsi>
+                
+    
+    <motor_szama>100FDSAF008F1G</motor_szama>
+                
+    
+    <alvaz_szama>0FSFDSFFF70000019</alvaz_szama>
+                
+    
+    <gyartas_sorszam>15B</gyartas_sorszam>
+                
+    
+    <casco_azon>FSDAG34</casco_azon>
+            
+  
+  </szemelygepjarmu>
+        
+  
+  <szemelygepjarmu rendszam="AA-BB-720">
+                
+    
+    <tulaj_jogsi>HU346544</tulaj_jogsi>
+                
+    
+    <motor_szama>100FDFGDS58F1G</motor_szama>
+                
+    
+    <alvaz_szama>0FSFDSCCC70000019</alvaz_szama>
+                
+    
+    <gyartas_sorszam>10B</gyartas_sorszam>
+                
+    
+    <casco_azon>HSDAG34</casco_azon>
+            
+  
+  </szemelygepjarmu>
+        
+  
+  <szemelygepjarmu rendszam="KD-QS-510">
+                
+    
+    <tulaj_jogsi>RO378544</tulaj_jogsi>
+                
+    
+    <motor_szama>540FDFGDS58F1G</motor_szama>
+                
+    
+    <alvaz_szama>3HSFDSCCC70000019</alvaz_szama>
+                
+    
+    <gyartas_sorszam>98C</gyartas_sorszam>
+            
+  
+  </szemelygepjarmu>
+        
+  
+  <!-- tulajdonosok -->
+        
+  
+  <tulajdonos jogositvany_szama="HU345678">
+                
+    
+    <nev>
+                        
+      
+      <vezeteknev>Kiss</vezeteknev>
+                        
+      
+      <keresztnev>Péter</keresztnev>
+                    
+    
+    </nev>
+            
+  
+  </tulajdonos>
+        
+  
+  <tulajdonos jogositvany_szama="HU346544">
+                
+    
+    <nev>
+                        
+      
+      <vezeteknev>Kovács</vezeteknev>
+                        
+      
+      <keresztnev>Mariann</keresztnev>
+                    
+    
+    </nev>
+            
+  
+  </tulajdonos>
+        
+  
+  <tulajdonos jogositvany_szama="RO378544">
+                
+    
+    <nev>
+                        
+      
+      <vezeteknev>Molnár</vezeteknev>
+                        
+      
+      <keresztnev>Máté</keresztnev>
+                    
+    
+    </nev>
+            
+  
+  </tulajdonos>
+        
+  
+  <!-- motorok -->
+        
+  
+  <motor motorszam="100FDSAF008F1G">
+                
+    
+    <uzemanyag>dizel</uzemanyag>
+                
+    
+    <loero>68</loero>
+                
+    
+    <nyomatek>160 Nm</nyomatek>
+            
+  
+  </motor>
+        
+  
+  <motor motorszam="100FDFGDS58F1G">
+                
+    
+    <uzemanyag>benzin</uzemanyag>
+                
+    
+    <loero>75</loero>
+                
+    
+    <nyomatek>107 Nm</nyomatek>
+            
+  
+  </motor>
+        
+  
+  <motor motorszam="540FDFGDS58F1G">
+                
+    
+    <uzemanyag>elektromos</uzemanyag>
+                
+    
+    <loero>150</loero>
+                
+    
+    <nyomatek>310 Nm</nyomatek>
+            
+  
+  </motor>
+        
+  
+  <!-- karosszériák -->
+        
+  
+  <karosszeria alvazszam="0FSFDSFFF70000019">
+                
+    
+    <felulet>matt</felulet>
+                
+    
+    <matrica>nincs</matrica>
+                
+    
+    <szin>feher</szin>
+                
+    
+    <szin>szürke</szin>
+            
+  
+  </karosszeria>
+        
+  
+  <karosszeria alvazszam="0FSFDSCCC70000019">
+                
+    
+    <felulet>teljes</felulet>
+                
+    
+    <matrica>van</matrica>
+                
+    
+    <szin>feher</szin>
+            
+  
+  </karosszeria>
+        
+  
+  <karosszeria alvazszam="3HSFDSCCC70000019">
+                
+    
+    <felulet>reszleges</felulet>
+                
+    
+    <matrica>nincs</matrica>
+                
+    
+    <szin>zöld</szin>
+                
+    
+    <szin>fekete</szin>
+                
+    
+    <szin>szürke</szin>
+            
+  
+  </karosszeria>
+        
+  
+  <!-- gyártási infók -->
+        
+  
+  <gyartas gyartasID="15B">
+                
+    
+    <marka>Ford</marka>
+                
+    
+    <modell>Fusion</modell>
+                
+    
+    <gyartasi_ev>2004</gyartasi_ev>
+            
+  
+  </gyartas>
+        
+  
+  <gyartas gyartasID="10B">
+                
+    
+    <marka>Renault</marka>
+                
+    
+    <modell>Twingo</modell>
+                
+    
+    <gyartasi_ev>2011</gyartasi_ev>
+            
+  
+  </gyartas>
+        
+  
+  <gyartas gyartasID="98C">
+                
+    
+    <marka>Volkswagen</marka>
+                
+    
+    <modell>ID.3</modell>
+                
+    
+    <gyartasi_ev>2021</gyartasi_ev>
+            
+  
+  </gyartas>
+        
+  
+  <!-- birtoklási kapcsolatok -->
+        
+  
+  <birtoklas jogositvany_szama="HU345678" rendszam="AB-CD-123">
+                
+    
+    <birtoklas_kezdete>2023-01-01</birtoklas_kezdete>
+            
+  
+  </birtoklas>
+        
+  
+  <birtoklas jogositvany_szama="HU346544" rendszam="AA-BB-720">
+                
+    
+    <birtoklas_kezdete>2022-11-04</birtoklas_kezdete>
+            
+  
+  </birtoklas>
+        
+  
+  <birtoklas jogositvany_szama="RO378544" rendszam="KD-QS-510">
+                
+    
+    <birtoklas_kezdete>2021-05-18</birtoklas_kezdete>
+            
+  
+  </birtoklas>
+    
 
-Current element: szemelygepjarmu
-Rendszam: AB-CD-123
-Tulaj jogsi: HU345678
-Motor szama: 100FDSAF008F1G
-Alvaz szama: 0FSFDSFFF70000019
-Gyartasi sorszam: 15B
-Casco azonosito: FSDAG34
-
-Current element: szemelygepjarmu
-Rendszam: AA-BB-720
-Tulaj jogsi: HU346544
-Motor szama: 100FDFGDS58F1G
-Alvaz szama: 0FSFDSCCC70000019
-Gyartasi sorszam: 10B
-Casco azonosito: HSDAG34
-
-Current element: szemelygepjarmu
-Rendszam: KD-QS-510
-Tulaj jogsi: RO378544
-Motor szama: 540FDFGDS58F1G
-Alvaz szama: 3HSFDSCCC70000019
-Gyartasi sorszam: 98C
-Casco azonosito: nincs
-
-Current element: tulajdonos
-Jogositvany szama: HU345678
-Vezeteknev: Kiss
-Keresztnev: Péter
-
-Current element: tulajdonos
-Jogositvany szama: HU346544
-Vezeteknev: Kovács
-Keresztnev: Mariann
-
-Current element: tulajdonos
-Jogositvany szama: RO378544
-Vezeteknev: Molnár
-Keresztnev: Máté
-
-Current element: motor
-Motorszam: 100FDSAF008F1G
-Uzemamyag: dizel
-Loero: 68
-Nyomatek: 160 Nm
-
-Current element: motor
-Motorszam: 100FDFGDS58F1G
-Uzemamyag: benzin
-Loero: 75
-Nyomatek: 107 Nm
-
-Current element: motor
-Motorszam: 540FDFGDS58F1G
-Uzemamyag: elektromos
-Loero: 150
-Nyomatek: 310 Nm
-
-Current element: karosszeria
-Alvazszam: 0FSFDSFFF70000019
-Felulet: matt
-Matrica: nincs
-Szin #1: feher
-Szin #2: szürke
-
-Current element: karosszeria
-Alvazszam: 0FSFDSCCC70000019
-Felulet: teljes
-Matrica: van
-Szin #1: feher
-
-Current element: karosszeria
-Alvazszam: 3HSFDSCCC70000019
-Felulet: reszleges
-Matrica: nincs
-Szin #1: zöld
-Szin #2: fekete
-Szin #3: szürke
-
-Current element: gyartas
-GyartasID: 15B
-Marka: Ford
-Modell: Fusion
-Gyartasi ev: 2004
-
-Current element: gyartas
-GyartasID: 10B
-Marka: Renault
-Modell: Twingo
-Gyartasi ev: 2011
-
-Current element: gyartas
-GyartasID: 98C
-Marka: Volkswagen
-Modell: ID.3
-Gyartasi ev: 2021
-
-Current element: birtoklas
-Rendszam: AB-CD-123
-Jogositvany szama: HU345678
-Birtoklas kezdete: 2023-01-01
-
-Current element: birtoklas
-Rendszam: AA-BB-720
-Jogositvany szama: HU346544
-Birtoklas kezdete: 2022-11-04
-
-Current element: birtoklas
-Rendszam: KD-QS-510
-Jogositvany szama: RO378544
-Birtoklas kezdete: 2021-05-18
+</gepjarmu>

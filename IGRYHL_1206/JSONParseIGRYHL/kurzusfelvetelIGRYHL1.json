@@ -1,1 +1,50 @@
-{"IGRYHL_kurzusfelvetel":{"kurzusok":{"kurzus":[{"oktato":"Dr. Bednarik László","hely":"XXXII A1 magasfsz","idopont":"Kedd 12:00-14:00","@id":"GEIAL332-B","kredit":"5","kurzusnev":"Adatkezelés XML-ben"},{"oktato":"Dr. Sasvári Péter","@nyelv":"angol","hely":"In\/101 In I. e. 101","idopont":"Szerda 14:00-16:00","@id":"GEIAL315-B","kredit":"5","kurzusnev":"Vállalati információs rendszerek fejlesztése"}]},"@egyetem":"ME","@tanev":"5","hallgato":{"szulev":"2001","hnev":"Somody Máté","szak":{"#text":"Programtervező informatika","@evf":"5"}}}}
+{
+  "kurzusfelvetelIGRYHL":{
+    "kurzusok":[
+      {
+        "oktato":"Dr. Bednarik László",
+        "szak":"Programtervező informatikus",
+        "idopont":{
+          "tol":12,
+          "nap":"kedd",
+          "ig":14
+        },
+        "kurzus":"Adatkezelés XML-ben",
+        "helyszin":"XXXII. előadó"
+      },
+      {
+        "oktato":"Dr. Bednarik László",
+        "szak":"Programtervező informatikus",
+        "idopont":{
+          "tol":10,
+          "nap":"szerda",
+          "ig":12
+        },
+        "kurzus":"Adatkezelés XML-ben",
+        "helyszin":"Inf. 101"
+      },
+      {
+        "oktato":"Dr. Sasvári Péter",
+        "szak":"Programtervező informatikus",
+        "idopont":{
+          "tol":14,
+          "nap":"szerda",
+          "ig":16
+        },
+        "kurzus":"Vállalati Információs Rendszerek Fejlesztése",
+        "helyszin":"Inf. 101"
+      },
+      {
+        "oktato":"Dr. Sasvári Péter",
+        "szak":"Programtervező informatikus",
+        "idopont":{
+          "tol":18,
+          "nap":"szerda",
+          "ig":20
+        },
+        "kurzus":"Vállalati Információs Rendszerek Fejlesztése",
+        "helyszin":"Inf. 101"
+      }
+    ]
+  }
+}
